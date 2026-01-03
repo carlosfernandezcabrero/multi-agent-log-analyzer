@@ -61,8 +61,8 @@ El sistema procesará los logs y generará un informe en:
 
 ### Ejemplo de Flujo
 
-1. **LogAnalystAgent**: Lee el archivo `sample_logs.txt` e identifica anomalías.
-2. **DiagnosisAgent**: Determina la causa raíz de las anomalías detectadas.
+1. **LogAnalystAgent**: Lee el archivo `sample_logs.txt` e identifica los errores.
+2. **DiagnosisAgent**: Determina las posibles causas raíz de los errores detectados.
 3. **RAGContextRetriever**: Busca en `knowledge_base/documents/` soluciones conocidas para problemas similares (ej. `db_timeout.txt`). Esta información se utiliza en los siguientes pasos para mejorar la calidad de los resultados.
 4. **SupervisorAgent**: Decide si se debe generar el reporte basandose en la confianza del diagnóstico.
 5. **ReportGeneratorAgent**: Compila toda la información en un informe final legible.
