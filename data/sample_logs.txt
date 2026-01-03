@@ -1,0 +1,5 @@
+2025-03-10 10:21:34 ERROR auth-service Failed to validate token
+2025-03-10 10:21:35 WARN auth-service Token about to expire
+2025-03-10 10:22:01 ERROR user-service Database connection timeout
+2025-03-10 10:22:05 ERROR user-service Database connection timeout
+2025-03-10 10:23:10 INFO api-gateway Request completed successfully

@@ -1,0 +1,7 @@
+Error type: Database connection timeout
+Component: user-service
+Description: Repeated database timeouts caused by connection pool exhaustion during traffic spikes.
+Recommended actions:
+- Increase pool size
+- Review slow queries
+Severity guideline: high

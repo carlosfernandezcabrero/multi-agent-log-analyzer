@@ -1,0 +1,7 @@
+langchain
+langchain-openai
+python-dotenv
+pytest
+coverage
+langchain-community
+faiss-cpu

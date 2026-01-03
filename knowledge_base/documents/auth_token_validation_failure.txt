@@ -1,0 +1,14 @@
+Error type: Auth token validation failure
+Component: auth-service
+Description:
+Repeated failures during authentication token validation. This error typically manifests as "Failed to validate token" messages in the auth-service logs and may lead to intermittent or widespread login failures.
+Historical incidents:
+- INC-342: Clock skew between auth-service and identity provider caused ~30% login failures during peak hours
+- INC-417: Misconfigured token TTL after deployment led to immediate token expiration
+Recommended actions:
+- Enforce time synchronization via NTP on all nodes
+- Review and standardize token configuration across services
+- Improve monitoring on authentication error rates
+- Add alerting for sudden spikes in token validation failures
+Severity guideline:
+Medium to High, depending on impact and user-facing error rate.
